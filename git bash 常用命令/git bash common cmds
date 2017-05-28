@@ -33,3 +33,18 @@ git push origin master 推送最新修改
 git merge <分支名>	合并分支到当前分支
 git branch -d <分支名>	删除分支
 git branch -D <分支名>	强制删除分支
+git log --graph	显示分支合并图
+git log --graph --pretty=oneline --abbrev-commit	显示分支合并图
+git merge --no-ff -m "提示信息" <分支名>		禁用ff(fast-forward)模式合并分支到当前分支
+ff模式是合并分支的默认模式,合并分支时使用ff模式,删除分支时,会丢掉分支信息
+git stash	把当前工作区储藏起来
+git stash list	显示stash列表
+恢复stash内容的两种方法"
+1.git stash apply	恢复后stash内容不会被删除,需要用git stash drop删除
+2.git stash pop		恢复的同时把stash内容也删除
+git remote	显示远程库信息
+git remote -v 显示更详细的远程库信息
+git push origin master 从本地推送分支
+git branch -b <分支名> origin/<分支名>	在本地创建和远程分支对应的分支,本地分支通常和远程分支名字一致
+git branch --set-upstream=<分支名> origin/<分支名>	建立本地分支和远程分支的关联
+git pull	从远程抓取分支
