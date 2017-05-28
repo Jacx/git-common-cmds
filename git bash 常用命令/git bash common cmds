@@ -1,0 +1,9 @@
+git 安装成功之后首先做设置,--global参数的作用该表示这台机器上所有git仓库都会使用相同的用户名和
+email地址,不使用--global参数表示当前git仓库使用的用户名和email地址
+git config --global user.name "JacxWang"
+git config --global user.email "camel_163.com"
+创建版本库有两种方式:
+1.git init在当前目录创建仓库
+
+git add <文件名> 把文件添加到仓库
+git commit -m "提示信息" 把文件提交到仓库
