@@ -3,8 +3,8 @@ email地址,不使用--global参数表示当前git仓库使用的用户名和email地址
 git config --global user.name "JacxWang"
 git config --global user.email "camel_163.com"
 创建版本库有两种方式:
-1.git init在当前目录创建仓库
-
+1.git init	在当前目录创建仓库
+2.git clone <远程库地址>	克隆远程库到本地
 git add <文件名>		把文件添加到仓库
 git commit -m "提示信息" 	把文件提交到仓库
 git status	显示仓库状态
@@ -18,8 +18,10 @@ HEAD表示当前版本,HEAD^表示上一个版本,上上一个版本就是HEAD^^,上N个版本就写成HEAD~
 git reflog		查看命令历史
 修改的两种情况:
 1.工作区修改后还没有放到暂存区
-git checkout -- <文件名> ------>用版本库里的版本替换工作区的版本,使文件恢复到工作区未修改的状态
+git checkout -- <文件名> 	用版本库里的版本替换工作区的版本,使文件恢复到工作区未修改的状态
 2.工作区修改后放到暂存区,又做了修改
-git reset HEAD <文件名> ------->用版本库里的版本替换暂存区的版本,把暂存区的修改撤销掉
-git checkout --<文件名> ------->用版本库里的版本替换工作区的版本,使文件恢复到工作区未修改的状态
+git reset HEAD <文件名> 	用版本库里的版本替换暂存区的版本,把暂存区的修改撤销掉
+git checkout --<文件名> 	用版本库里的版本替换工作区的版本,使文件恢复到工作区未修改的状态
 git rm <文件名>	---->  git commit	从版本库删除文件
+ssh-keygen -t rsa -c "邮件地址"	创建SSH key
+git remote add origin <远程库地址> 添加远程库,origin是远程库的名字,是git默认叫法,可以修改
