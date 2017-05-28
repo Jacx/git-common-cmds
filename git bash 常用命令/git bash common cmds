@@ -59,3 +59,7 @@ git remote origin --tags	推送本地所有标签到远程
 删除远程标签共两步:
 1.删除本地标签 git tag -d <标签名>
 2.删除远程标签git push origin :refs/tags/<标签名>
+在工作区的根目录创建.gitignore忽略特殊文件
+git check-ignore -v <文件名>	显示导致规则文件不能添加的规则
+git config --global alias.<别名> <命令>	为命令设置别名
+修改.git/config配置文件删除别名
