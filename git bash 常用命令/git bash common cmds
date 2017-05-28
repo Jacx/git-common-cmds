@@ -25,3 +25,11 @@ git checkout --<文件名> 	用版本库里的版本替换工作区的版本,使文件恢复到工作区未修
 git rm <文件名>	---->  git commit	从版本库删除文件
 ssh-keygen -t rsa -c "邮件地址"	创建SSH key
 git remote add origin <远程库地址> 添加远程库,origin是远程库的名字,是git默认叫法,可以修改
+git push -u origin master	第一次推送master分支的所有内容
+git push origin master 推送最新修改
+创建分支的两种方法:
+1.git branch <分支名> 创建分支----->git checkout <分支名> 切换分支
+2.git checkout -b <分知名>	创建并切换到分支
+git merge <分支名>	合并分支到当前分支
+git branch -d <分支名>	删除分支
+git branch -D <分支名>	强制删除分支
